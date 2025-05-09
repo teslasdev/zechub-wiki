@@ -16,6 +16,7 @@ import SearchBar from "../SearchBar";
 import { Icon } from "../UI/Icon";
 import Logo from "../UI/Logo";
 import SocialIcons from "../UI/SocialIcons";
+import LanguageSelector from "./LangSelector";
 
 const NavLinks = ({
   classes,
@@ -191,6 +192,7 @@ const Navigation = () => {
             className="hidden xl:flex p-2 w-auto justify-end sm:gap-6"
             style={{ display: "flex", alignItems: "center" }}
           >
+            <LanguageSelector />
             <DonationBtn />
           </div>
         </div>
