@@ -1,6 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 .gitignore
-.env
 .gitpod.yml
 .idea
 /.idea
@@ -36,9 +35,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
-.env
-.env.local 
-.env.production
+temp_auto_push.bat
 
 # vercel
 .vercel
@@ -78,3 +75,5 @@ __pycache__/
 
 # Generated at build time by scripts/generate-search-index.mjs
 public/search-index/
+branch_structure.json
+config.bat
