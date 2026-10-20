@@ -38,6 +38,7 @@ yarn-error.log*
 # local env files
 .env
 .env.local 
+temp_auto_push.bat
 .env.production
 
 # vercel
@@ -78,3 +79,4 @@ __pycache__/
 
 # Generated at build time by scripts/generate-search-index.mjs
 public/search-index/
+branch_structure.json
