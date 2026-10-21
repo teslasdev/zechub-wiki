@@ -221,11 +221,6 @@ export default function CodePulse() {
       merged_prs: totals.prs,
     };
   });
-  const projects = current?.projects || [];
-  const sortedProjects = [...projects].sort((a: any, b: any) => projectActivity(b, view) - projectActivity(a, view));
-  const heatmapData = trendData.slice(-84);
-  const maxHeat = Math.max(1, ...heatmapData.map((item: any) => Number(item[selectedMetric]) || 0));
-  const changeView = (nextView: View) => { setView(nextView); setSelectedMetric(nextView === "radicle" ? "seeding" : "stars"); if (nextView !== "github") setSelectedRepo("all"); };
 
   const linkTrendData = linkHistory.map((entry) => ({
     date: entry.date,
